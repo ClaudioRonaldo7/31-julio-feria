@@ -1,0 +1,317 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*linea*/
+.top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    box-shadow: 0 0 8px black;
+}
+
+/*tarjeta conocenos*/
+.cardi h2 {
+    color: black;
+}
+
+/*contenedor de navegacion*/
+.top .contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+}
+
+/*onlyfootball h1*/
+.logo h1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/*navegacion*/
+.bmenu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*separado los nombres de navegacion*/
+.bmenu ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+/*separar letra por letra*/
+.bmenu ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/*cambiar color enzima de navegacion*/
+.bmenu ul li a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/*video fondo*/
+.caja-video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* FONDO OSCURO que esta enzima del video*/
+.caja-video::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        width: 95%;
+    }
+
+    .top {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    video {
+        display: none;
+    }
+
+    .caja-video::after {
+        background-image: url(/img-fondo/video-inicio.png);
+    }
+}
+
+
+/**CUENTA**/
+/**iniciar sesion**/
+.containerD {
+    color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*bienvenido inicia sesion*/
+.containerD h1 {
+    text-align: center;
+}
+
+/**pregunta para registrarse**/
+.containerD form p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/**link para registrarse**/
+.containerD form p a {
+    text-decoration: underline;
+    color: blue;
+}
+
+/**formulario**/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/**bordes iniciar sesion**/
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #f81515;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #f81515;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/**CONOCENOSSSSSSSSSSSSSSSSS**/
+/**tarjeta de conocenos**/
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/**dentro de tarjeta de conocenos**/
+.cardi {
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    transition: transform 1s;
+    margin: 20px;
+}
+
+.cardi:hover {
+    transform: scale(1.1);
+}
+
+/**img de dentro de tarjeas de conocenos**/
+.cardi img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/**color de letra**/
+.cardi p {
+    color: #666;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .cardi {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardi {
+        width: 90%;
+    }
+}
+
+/**slider tamaño**/
+.slider-box {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+/**slider cambiar**/
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+
+    20% {
+        margin-left: 0px;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+.registrese-tamaño {
+    margin-top: -60px;
+}
+
+.peo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200x;
+}
+
+.queque {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body a {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 7px;
+}
+.btn{
+    margin-top: 100px;
+}
+.botonaso{
+    margin-top: 20px;
+}
