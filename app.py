@@ -2,27 +2,27 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/inicio.html', methods=['GET'])
+@app.route('/', methods=['GET'])
 def inicio():
     return render_template('inicio.html')
 
-@app.route('/categorias.html', methods=['GET'])
+@app.route('/categorias/', methods=['GET'])
 def categorias():
     return render_template('categorias.html')
 
-@app.route('/oferta.html', methods=['GET'])
+@app.route('/oferta', methods=['GET'])
 def oferta():
     return render_template('oferta.html')
 
-@app.route('/conocenos.html', methods=['GET'])
+@app.route('/conocenos', methods=['GET'])
 def conocenos():
     return render_template('conocenos.html')
 
-@app.route('/cuenta.html', methods=['GET'])
+@app.route('/cuenta', methods=['GET'])
 def cuenta():
     return render_template('cuenta.html')
 
-@app.route('/registrese.html', methods=['GET'])
+@app.route('/registrese', methods=['GET'])
 def registrese():
     return render_template('registrese.html')
 

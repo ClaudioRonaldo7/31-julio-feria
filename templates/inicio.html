@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='/style.css')}}">
 </head>
 
 <body>
@@ -14,34 +14,34 @@
         <div class="top">
             <div class="contenedor">
                 <div class="logo">
-                    <h1><a href="inicio.html">ONLY FOOTBALL</a></h1>
+                    <h1><a href="/">ONLY FOOTBALL</a></h1>
                 </div>
                 <nav class="bmenu">
                     <ul>
-                        <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="categorias.html">Categorias</a></li>
-                        <li><a href="oferta.html">Ofertas</a></li>
-                        <li><a href="conocenos.html">Conocenos</a></li>
-                        <li><a href="cuenta.html">Cuenta</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/categorias">Categorias</a></li>
+                        <li><a href="/oferta">Ofertas</a></li>
+                        <li><a href="/conocenos">Conocenos</a></li>
+                        <li><a href="/cuenta">Cuenta</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="caja-video">
-            <video autoplay muted loop poster="/img-fondos/fondo-inicio.mp4">
-                <source src="/img-fondos/fondo-inicio.mp4">
+            <video autoplay muted loop poster="{{url_for('static', filename='/img-fondos/fondo-inicio.mp4')}}">
+                <source src="{{url_for('static', filename='/img-fondos/fondo-inicio.mp4')}}">
             </video>
         </div>
         <div class="slider-box">
             <ul>
                 <li>
-                    <img src="/img-slider/1.png">
+                    <img src="{{url_for('static', filename='/img-slider/1.png')}}">
                 </li>
                 <li>
-                    <img src="/img-slider/2.png">
+                    <img src="{{url_for('static', filename='/img-slider/2.png')}}">
                 </li>
                 <li>
-                    <img src="/img-slider/3.png">
+                    <img src="{{url_for('static', filename='/img-slider/3.png')}}">
                 </li>
             </ul>
         </div>

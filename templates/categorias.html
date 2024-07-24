@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='/style.css')}}" />
 </head>
 
 <body>
@@ -14,29 +14,29 @@
         <div class="top">
             <div class="contenedor">
                 <div class="logo">
-                    <h1><a href="inicio.html">ONLY FOOTBALL</a></h1>
+                    <h1><a href="/">ONLY FOOTBALL</a></h1>
                 </div>
                 <nav class="bmenu">
                     <ul>
-                        <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="categorias.html">Categorias</a></li>
-                        <li><a href="oferta.html">Ofertas</a></li>
-                        <li><a href="conocenos.html">Conocenos</a></li>
-                        <li><a href="cuenta.html">Cuenta</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/categorias/">Categorias</a></li>
+                        <li><a href="/oferta">Ofertas</a></li>
+                        <li><a href="/conocenos">Conocenos</a></li>
+                        <li><a href="/cuenta">Cuenta</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="caja-video-personalizada">
-            <video autoplay muted loop poster="/img-fondos/img-lanz-ofert.mp4">
-                <source src="/img-fondos/img-lanz-ofert.mp4" />
+            <video autoplay muted loop poster="{{url_for('static', filename='/img-fondos/img-lanz-ofert.mp4')}}">
+                <source src="{{url_for('static', filename='/img-fondos/img-lanz-ofert.mp4')}}"/>
             </video>
         </div>
     </header>
     <div class="peo">
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/zapatilla-4.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/4.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -52,7 +52,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/zapatilla-5.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/zapatilla-5.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -68,7 +68,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/zapatilla-9.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/zapatilla-9.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -84,7 +84,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/4.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/zapatilla-4.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -101,7 +101,7 @@
     <div class="peo">
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/short1.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/short1.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -117,7 +117,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/short2.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/short2.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -133,7 +133,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/short3.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/short3.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -149,7 +149,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/short4.png" class="card-img-top" alt="..." />
+                <img src="{{url_for('static', filename='/img-lanzamiento/short3.png')}}" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -167,7 +167,7 @@
     <div class="peo">
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/zapatilla-4.png" class="card-img-top" alt="..." />
+                <img src="/static/img-lanzamiento/zapatilla-4.png" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -183,7 +183,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/zapatilla-5.png" class="card-img-top" alt="..." />
+                <img src="/static/img-lanzamiento/zapatilla-5.png" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -199,7 +199,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/zapatilla-9.png" class="card-img-top" alt="..." />
+                <img src="/static/img-lanzamiento/zapatilla-9.png" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -215,7 +215,7 @@
 
         <div class="card" style="width: 18rem">
             <div class="queque">
-                <img src="/img-lanzamiento/4.png" class="card-img-top" alt="..." />
+                <img src="/static/img-lanzamiento/4.png" class="card-img-top" alt="..." />
             </div>
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='/style.css')}}">
 </head>
 
 <body>
@@ -14,36 +14,36 @@
         <div class="top">
             <div class="contenedor">
                 <div class="logo">
-                    <h1><a href="inicio.html">ONLY FOOTBALL</a></h1>
+                    <h1><a href="/">ONLY FOOTBALL</a></h1>
                 </div>
                 <nav class="bmenu">
                     <ul>
-                        <li><a href="inicio.html">Inicio</a></li>
-                        <li><a href="categorias.html">Categorias</a></li>
-                        <li><a href="oferta.html">Ofertas</a></li>
-                        <li><a href="conocenos.html">Conocenos</a></li>
-                        <li><a href="cuenta.html">Cuenta</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/categorias">Categorias</a></li>
+                        <li><a href="/oferta">Ofertas</a></li>
+                        <li><a href="/conocenos">Conocenos</a></li>
+                        <li><a href="/cuenta">Cuenta</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="caja-video">
-            <video autoplay muted loop poster="/img-fondos/img-conocenos.mp4">
-                <source src="/img-fondos/img-conocenos.mp4">
+            <video autoplay muted loop poster="{{url_for('static', filename='/img-fondos/img-conocenos.mp4')}}">
+                <source src="{{url_for('static', filename='/img-fondos/img-conocenos.mp4')}}">
             </video>
         </div>
         <main class="slider-tamaño">
-            <a href="/perfiles/claudio/index.html">
+            <a href="{{url_for('static', filename='/perfiles/claudio/index.html')}}">
                 <div class="cardi">
-                    <img src="/img-perfiles/claudio.png" alt="">
+                    <img src="{{url_for('static', filename='/img-perfiles/claudio.png')}}" alt="">
                     <h2>Claudio Pincheira</h2>
                     <p>Hola soy Claudio tengo 18 años,estoy estudiando Tecnico en Programacion y este es mi segundo
                         proyecto. </p>
                 </div>
             </a>
-            <a href="/perfiles/geraldine/index.html">
+            <a href="{{url_for('static', filename='/perfiles/geraldine/index.html')}}">
                 <div class="cardi">
-                    <img src="/img-perfiles/geraldine.png" alt="">
+                    <img src="{{url_for('static', filename='/img-perfiles/geraldine.png')}}" alt="">
                     <h2>Geraldine Maturana</h2>
                     <p>Hola soy Geraldine tengo 18 años,estoy estudiando Tecnico en Programacion y este es mi segundo
                         proyecto.</p>
