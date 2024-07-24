@@ -75,8 +75,33 @@
     content: "";
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.caja-video-personalizada::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.caja-video-personalizada video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -282,6 +307,7 @@ main {
 .peo {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 40px;
 }
 
 .card {
