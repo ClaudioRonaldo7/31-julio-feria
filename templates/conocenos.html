@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='/style.css')}}" />
 </head>
 
 <body>
@@ -29,32 +29,53 @@
         </div>
         <div class="caja-video">
             <video autoplay muted loop poster="{{url_for('static', filename='/img-fondos/img-conocenos.mp4')}}">
-                <source src="{{url_for('static', filename='/img-fondos/img-conocenos.mp4')}}">
+                <source src="{{url_for('static', filename='/img-fondos/img-conocenos.mp4')}}" />
             </video>
         </div>
         <main class="slider-tamaño">
             <a href="{{url_for('static', filename='/perfiles/claudio/index.html')}}">
                 <div class="cardi">
-                    <img src="{{url_for('static', filename='/img-perfiles/claudio.png')}}" alt="">
+                    <img src="{{url_for('static', filename='/img-perfiles/claudio.png')}}" alt="" />
                     <h2>Claudio Pincheira</h2>
-                    <p>Hola soy Claudio tengo 18 años,estoy estudiando Tecnico en Programacion y este es mi segundo
-                        proyecto. </p>
+                    <p>
+                        Hola soy Claudio tengo 18 años,estoy estudiando Tecnico en
+                        Programacion y este es mi segundo proyecto.
+                    </p>
                 </div>
             </a>
             <a href="{{url_for('static', filename='/perfiles/geraldine/index.html')}}">
                 <div class="cardi">
-                    <img src="{{url_for('static', filename='/img-perfiles/geraldine.png')}}" alt="">
+                    <img src="{{url_for('static', filename='/img-perfiles/geraldine.png')}}" alt="" />
                     <h2>Geraldine Maturana</h2>
-                    <p>Hola soy Geraldine tengo 18 años,estoy estudiando Tecnico en Programacion y este es mi segundo
-                        proyecto.</p>
+                    <p>
+                        Hola soy Geraldine tengo 18 años,estoy estudiando Tecnico en
+                        Programacion y este es mi segundo proyecto.
+                    </p>
                 </div>
             </a>
+            <div class="monitor">
+                <h5>CONOCENOS</h5>
+                <p>
+                    En ONLY FOOTBALL, Nos dedicamos a  
+                    la venta de articulos deportivos. Fundada en
+                    2024, nuestra misión es proporcionar productos y servicios de alta
+                    calidad que superen las expectativas.
+                </p>
+                <h5>NUESTROS VALORES</h5>
+                <p>
+                    Integridad: Actuamos con honestidad y transparencia en todas
+                    nuestras interacciones.
+                </p>
+                <p>
+                    Innovación: Buscamos constantemente nuevas formas de mejorar y
+                    adaptarnos a las necesidades del mercado
+                </p>
+                <p>
+                    Compromiso: Estamos dedicados a brindar el mejor servicio posible al cliente.
+                </p>
+            </div>
         </main>
     </header>
-    <section class="info-contact">
-        <div>
-        </div>
-    </section>
 </body>
 
 </html>

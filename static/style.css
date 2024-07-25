@@ -351,3 +351,16 @@ main {
 .card-text-no-rayado{
     color: #f81515;
 }
+
+
+.monitor{
+    background-color: white;
+    border: solid white;
+    border-radius: 20px;
+    margin-right: 10px;
+    height: 300px;
+}
+.monitor h5, .monitor p{
+    padding: 5px;
+    padding-top: 10px;
+}
