@@ -351,7 +351,12 @@ main {
 .card-text-no-rayado{
     color: #f81515;
 }
-
+.logo h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .monitor{
     background-color: white;
@@ -363,4 +368,7 @@ main {
 .monitor h5, .monitor p{
     padding: 5px;
     padding-top: 10px;
+}
+.monitor h5{
+    font-size: 17px;
 }
