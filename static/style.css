@@ -363,7 +363,7 @@ p{
     border: solid white;
     border-radius: 20px;
     margin-right: 10px;
-    height: 300px;
+    height: 350px;
 }
 .monitor h5, .monitor p{
     padding: 5px;
@@ -371,4 +371,8 @@ p{
 }
 .monitor h5{
     font-size: 17px;
+}
+.elnine{
+    display: flex;
+    justify-content: space-evenly;
 }
