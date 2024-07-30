@@ -342,7 +342,11 @@ main {
 .btn{
     margin-top: 100px;
 }
-
+.card-title{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 .card-text-rayado{

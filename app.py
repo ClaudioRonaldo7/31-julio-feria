@@ -1,4 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from models.Ofertas import ofertas
+from models.Producto import productos7
+
 
 app = Flask(__name__)
 
@@ -8,11 +11,23 @@ def inicio():
 
 @app.route('/categorias/', methods=['GET'])
 def categorias():
+    search = request.args.get('search')
+    if search:
+        print("search parameter: " + search)
+        productos = productos7.get_all_filter(search)
+    else:
+        productos = productos7.get_all()
     return render_template('categorias.html')
 
 @app.route('/oferta', methods=['GET'])
 def oferta():
-    return render_template('oferta.html')
+    search = request.args.get('search')
+    if search:
+        print("search parameter: " + search)
+        productos = ofertas.get_all_filter(search)
+    else:
+        productos = ofertas.get_all()
+    return render_template("oferta.html", productos=productos, search=search)
 
 @app.route('/conocenos', methods=['GET'])
 def conocenos():
