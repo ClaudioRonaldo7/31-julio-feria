@@ -17,7 +17,7 @@ def categorias():
         productos = productos7.get_all_filter(search)
     else:
         productos = productos7.get_all()
-    return render_template('categorias.html')
+    return render_template('categorias.html', productos=productos, search=search)
 
 @app.route('/oferta', methods=['GET'])
 def oferta():
